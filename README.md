@@ -33,7 +33,7 @@ No ads. No paywalls. Just fast, reliable conversions.
 Clone the repository and install dependencies:  
 
 ```bash
-git clone https://github.com/yourusername/any2any.git
+git clone https://github.com/Razak002/any2any
 cd any2any
 npm install
 Run the development server:
