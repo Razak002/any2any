@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${inter.className} h-full`}>
+      <body className={`${inter.className} h-full overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -33,15 +33,13 @@ export default function RootLayout({
         >
           <div className="min-h-screen flex flex-col">
             <Navbar />
-
-            <main className="flex-1 flex items-center justify-center px-4 py-6 sm:px-6 lg:px-8">
-              <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl">
-                <div className="flex items-center justify-center min-h-[60vh] sm:min-h-[50vh] md:min-h-[40vh]">
+            <main className="flex-1 px-4 py-6 sm:px-6 lg:px-8 overflow-y-auto">
+              <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl 2xl:max-w-6xl mx-auto">
+                <div className="py-4 sm:py-8 md:py-12">
                   {children}
                 </div>
               </div>
             </main>
-
             <Toaster />
           </div>
         </ThemeProvider>
