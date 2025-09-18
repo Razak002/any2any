@@ -61,7 +61,7 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-3">
         <ModeToggle />
         <Link
-          href="https://github.com/benlhachemi/modifio.git"
+          href="https://github.com/Razak002/any2any"
           target="_blank"
           rel="noopener noreferrer"
         >
